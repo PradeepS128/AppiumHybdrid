@@ -8,10 +8,8 @@
     <classes>
       <class name="TestScripts.Test_Scripts_1">
         <methods>
-          <include name="name"/>
           <include name="loginApplication"/>
-          <include name="changeUserName"/>
-          <include name="scannVechile"/>
+          <include name="completeEntireDeliver"/>
         </methods>
       </class> <!-- TestScripts.Test_Scripts_1 -->
     </classes>

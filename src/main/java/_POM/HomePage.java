@@ -77,11 +77,42 @@ public class HomePage extends ReusuableCode
 	driver.findElement(CustomerDetails).sendKeys("3");
 	elementToAppear(driver.findElement(EkartName));
 	driver.findElement(EkartName).click();
-	elementToAppear(driver.findElement(Submit));
-	driver.findElement(Submit).click();
-	driver.navigate().back();
-	Thread.sleep(3000);
 	}
 	
+	public void completeDelivery() throws InterruptedException 
+	{
+		elementToAppear(driver.findElement(Submit));
+		driver.findElement(Submit).click();
+		Thread.sleep(3000);	
+	}
+	
+	//Billing Details	
+	public String billingDetails_NOS() 
+	{
+	String Number_of_services = driver.findElement(By.xpath("//android.view.View[@content-desc=\"Number of Services\"]")).getText();
+	String money1 = driver.findElement(By.xpath("//android.view.View[@index=16]")).getText();
+	return Number_of_services.concat(money1);
+	}
+	
+	public String billingDetails_MG() 
+	{	
+	String min_Guarantee = driver.findElement(By.xpath("//android.view.View[@content-desc=\"Minimum Guarantee\"]")).getText();
+	String money2 = driver.findElement(By.xpath("//android.view.View[@index=18]")).getText();
+	return min_Guarantee.concat(money2);
+	}
+	
+	public String billingDetails_CPT() 
+	{
+	String Charge_to_Trip=driver.findElement(By.xpath("//android.view.View[@content-desc=\"Charge per Trip\"]")).getText();
+	String money3 = driver.findElement(By.xpath("//android.view.View[@index=20]")).getText();
+	return Charge_to_Trip.concat(money3);
+	}
+	
+	public String billingDetails_Total() 
+	{
+	String Total=driver.findElement(By.xpath("//android.view.View[@content-desc=\"Total\"]")).getText();
+	String money4 = driver.findElement(By.xpath("//android.view.View[@index=22]")).getText();
+	return Total.concat(money4);
+	}
 	
 }
