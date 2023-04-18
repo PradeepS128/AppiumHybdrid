@@ -19,7 +19,10 @@ public class Test_Scripts_1 extends BaseClass {
 	public MyProfile myProfile;
 	public MorePage morePage;
 	public HomePage homePage;
-
+	public String NOS;
+	public String MG;
+	public String CPT;
+	public String Total;
 
 	@Test(priority = 1)
 	public void changeUserName() throws Exception
@@ -44,9 +47,20 @@ public class Test_Scripts_1 extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void name() throws InterruptedException {
+	public void startDelivery() throws InterruptedException {
 		homePage.startDelivery();
+		NOS = homePage.billingDetails_NOS();
+		MG=homePage.billingDetails_MG();
+		CPT=homePage.billingDetails_CPT();
+		Total=homePage.billingDetails_Total();
+		
 	}
 
+	@Test(priority = 4)
+	public void completeEntireDeliver() throws InterruptedException 
+	{
+		homePage.completeDelivery();
+		dashboard.servicesButton();
+	}
 
 }

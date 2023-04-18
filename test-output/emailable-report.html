@@ -9,12 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">66,964</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">116,760</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">TestScripts.Test_Scripts_1</td><td><a href="#m0">changeUserName</a></td><td rowspan="1">1681815100612</td><td rowspan="1">17778</td></tr><tr class="passedeven"><td><a href="#m1">name</a></td><td rowspan="1">1681815139481</td><td rowspan="1">28012</td></tr><tr class="passedeven"><td><a href="#m2">scannVechile</a></td><td rowspan="1">1681815118419</td><td rowspan="1">21055</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestScripts.Test_Scripts_1</td><td><a href="#m0">completeEntireDeliver</a></td><td rowspan="1">1681820378041</td><td rowspan="1">43521</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">TestScripts.Test_Scripts_1</td><td><a href="#m1">changeUserName</a></td><td rowspan="1">1681820306648</td><td rowspan="1">17685</td></tr><tr class="passedeven"><td><a href="#m2">scannVechile</a></td><td rowspan="1">1681820324359</td><td rowspan="1">21691</td></tr><tr class="passedeven"><td><a href="#m3">startDelivery</a></td><td rowspan="1">1681820346055</td><td rowspan="1">31980</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestScripts.Test_Scripts_1#changeUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestScripts.Test_Scripts_1#name</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestScripts.Test_Scripts_1#completeEntireDeliver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7, findElement {using=xpath, value=//android.widget.ImageView[@content-desc=&quot;Service&quot;]}]
+Capabilities {appium:appActivity: com.threeeco.driver.MainAct..., appium:appPackage: com.threeeco.driver, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.threeeco.driver.MainAct..., appPackage: com.threeeco.driver, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 214a95330410, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 214a95330410, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at _POM.Dashboard.servicesButton(Dashboard.java:35)
+	at TestScripts.Test_Scripts_1.completeEntireDeliver(Test_Scripts_1.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestScripts.Test_Scripts_1#changeUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">TestScripts.Test_Scripts_1#scannVechile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestScripts.Test_Scripts_1#startDelivery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

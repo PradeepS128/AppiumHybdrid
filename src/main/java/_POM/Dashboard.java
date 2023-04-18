@@ -13,7 +13,7 @@ public class Dashboard extends ReusuableCode {
 
 	By more=By.xpath("//android.widget.ImageView[@content-desc='More']");
 	By home=By.xpath("//android.widget.ImageView[@content-desc='Home']");
-	
+	By services=By.xpath("//android.widget.ImageView[@content-desc=\"Service\"]");
 	
 	public void moreButton()
 	{
@@ -30,5 +30,10 @@ public class Dashboard extends ReusuableCode {
 	driver.findElement(home).click();
 	}
 	
+	public void servicesButton() 
+	{
+	elementToAppear(driver.findElement(services));	
+	driver.findElement(services).click();	
+	}
 	}
 	
