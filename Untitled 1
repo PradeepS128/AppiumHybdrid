@@ -1,0 +1,12 @@
+Notes;-
+
+adb devices
+adb shell dumpsys window | find "mCurrentFocus"
+adb install "----APP LOCATION-----"
+
+
+Appium Inspector
+Android Emulator
+Eclipse IDE
+Set Android Home etc
+https://youtu.be/vh70NrcBgh4

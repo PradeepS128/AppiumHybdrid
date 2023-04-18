@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-18T16:21:40 IST" name="Suite" finished-at="2023-04-18T16:22:47 IST" duration-ms="66964">
+    <groups>
+    </groups>
+    <test started-at="2023-04-18T16:21:40 IST" name="Test" finished-at="2023-04-18T16:22:47 IST" duration-ms="66964">
+      <class name="TestScripts.Test_Scripts_1">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:TestScripts.Test_Scripts_1@539d019]" started-at="2023-04-18T16:21:09 IST" name="loginApplication" finished-at="2023-04-18T16:21:40 IST" duration-ms="30941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="changeUserName()[pri:1, instance:TestScripts.Test_Scripts_1@539d019]" started-at="2023-04-18T16:21:40 IST" name="changeUserName" finished-at="2023-04-18T16:21:58 IST" duration-ms="17778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeUserName -->
+        <test-method signature="scannVechile()[pri:2, instance:TestScripts.Test_Scripts_1@539d019]" started-at="2023-04-18T16:21:58 IST" name="scannVechile" finished-at="2023-04-18T16:22:19 IST" duration-ms="21055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scannVechile -->
+        <test-method signature="name()[pri:3, instance:TestScripts.Test_Scripts_1@539d019]" started-at="2023-04-18T16:22:19 IST" name="name" finished-at="2023-04-18T16:22:47 IST" duration-ms="28012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name -->
+      </class> <!-- TestScripts.Test_Scripts_1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
