@@ -1,101 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="1" total="18" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-18T17:48:26 IST" name="Suite" finished-at="2023-04-18T17:50:23 IST" duration-ms="116760">
+  <suite started-at="2023-04-24T18:21:11 IST" name="Suite" finished-at="2023-04-24T18:24:20 IST" duration-ms="189036">
     <groups>
+      <group name="regression">
+        <method signature="User_Flows.changeUserName()[pri:1, instance:TestScripts.User_Flows@4b6e2263]" name="changeUserName" class="TestScripts.User_Flows"/>
+      </group> <!-- regression -->
+      <group name="Smoke">
+        <method signature="User_Flows.changeUserName()[pri:1, instance:TestScripts.User_Flows@4b6e2263]" name="changeUserName" class="TestScripts.User_Flows"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-04-18T17:48:26 IST" name="Test" finished-at="2023-04-18T17:50:23 IST" duration-ms="116760">
-      <class name="TestScripts.Test_Scripts_1">
-        <test-method is-config="true" signature="loginApplication()[pri:0, instance:TestScripts.Test_Scripts_1@6ed3f258]" started-at="2023-04-18T17:47:52 IST" name="loginApplication" finished-at="2023-04-18T17:48:26 IST" duration-ms="34215" status="PASS">
+    <test started-at="2023-04-24T18:21:11 IST" name="Test" finished-at="2023-04-24T18:24:20 IST" duration-ms="189036">
+      <class name="TestScripts.User_Flows">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:20:35 IST" name="loginApplication" finished-at="2023-04-24T18:21:11 IST" duration-ms="36110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApplication -->
-        <test-method signature="changeUserName()[pri:1, instance:TestScripts.Test_Scripts_1@6ed3f258]" started-at="2023-04-18T17:48:26 IST" name="changeUserName" finished-at="2023-04-18T17:48:44 IST" duration-ms="17685" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:21:11 IST" name="pageObjects" finished-at="2023-04-24T18:21:11 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObjects -->
+        <test-method signature="changeUserName()[pri:1, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:21:11 IST" name="changeUserName" finished-at="2023-04-24T18:21:26 IST" duration-ms="14406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeUserName -->
-        <test-method signature="scannVechile()[pri:2, instance:TestScripts.Test_Scripts_1@6ed3f258]" started-at="2023-04-18T17:48:44 IST" name="scannVechile" finished-at="2023-04-18T17:49:06 IST" duration-ms="21691" status="PASS">
+        <test-method signature="scannVechile()[pri:2, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:21:26 IST" name="scannVechile" finished-at="2023-04-24T18:21:44 IST" duration-ms="18675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scannVechile -->
-        <test-method signature="startDelivery()[pri:3, instance:TestScripts.Test_Scripts_1@6ed3f258]" started-at="2023-04-18T17:49:06 IST" name="startDelivery" finished-at="2023-04-18T17:49:38 IST" duration-ms="31980" status="PASS">
+        <test-method signature="startDelivery()[pri:3, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:21:44 IST" name="startDelivery" finished-at="2023-04-24T18:22:06 IST" duration-ms="21416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDelivery -->
-        <test-method signature="completeEntireDeliver()[pri:4, instance:TestScripts.Test_Scripts_1@6ed3f258]" started-at="2023-04-18T17:49:38 IST" name="completeEntireDeliver" finished-at="2023-04-18T17:50:21 IST" duration-ms="43521" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7, findElement {using=xpath, value=//android.widget.ImageView[@content-desc="Service"]}]
-Capabilities {appium:appActivity: com.threeeco.driver.MainAct..., appium:appPackage: com.threeeco.driver, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.threeeco.driver.MainAct..., appPackage: com.threeeco.driver, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 214a95330410, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 214a95330410, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7, findElement {using=xpath, value=//android.widget.ImageView[@content-desc="Service"]}]
-Capabilities {appium:appActivity: com.threeeco.driver.MainAct..., appium:appPackage: com.threeeco.driver, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.threeeco.driver.MainAct..., appPackage: com.threeeco.driver, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 214a95330410, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 214a95330410, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1d7a8bd4-7633-4e1f-bbf0-3711a50ad6a7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at _POM.Dashboard.servicesButton(Dashboard.java:35)
-at TestScripts.Test_Scripts_1.completeEntireDeliver(Test_Scripts_1.java:63)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="completeEntireDeliver()[pri:4, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:22:06 IST" name="completeEntireDeliver" finished-at="2023-04-24T18:22:12 IST" duration-ms="5934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- completeEntireDeliver -->
-      </class> <!-- TestScripts.Test_Scripts_1 -->
+        <test-method signature="verify_dropdownFunctionality_in_Services()[pri:5, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:22:12 IST" name="verify_dropdownFunctionality_in_Services" finished-at="2023-04-24T18:22:36 IST" duration-ms="24037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_dropdownFunctionality_in_Services -->
+        <test-method signature="changeProfile()[pri:6, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:22:36 IST" name="changeProfile" finished-at="2023-04-24T18:22:47 IST" duration-ms="11024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeProfile -->
+        <test-method signature="applyForLeave_withCancelButton()[pri:7, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:22:47 IST" name="applyForLeave_withCancelButton" finished-at="2023-04-24T18:23:03 IST" duration-ms="16032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLeave_withCancelButton -->
+        <test-method signature="applyForLeave_withApplyButton()[pri:8, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:03 IST" name="applyForLeave_withApplyButton" finished-at="2023-04-24T18:23:19 IST" duration-ms="16066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLeave_withApplyButton -->
+        <test-method signature="Timesheet_flow()[pri:9, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:19 IST" name="Timesheet_flow" finished-at="2023-04-24T18:23:21 IST" duration-ms="2404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Timesheet_flow -->
+        <test-method signature="filterByDate_HistoryDropdown_()[pri:10, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:21 IST" name="filterByDate_HistoryDropdown_" finished-at="2023-04-24T18:23:33 IST" duration-ms="11330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByDate_HistoryDropdown_ -->
+        <test-method signature="benchMark_functionality()[pri:11, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:33 IST" name="benchMark_functionality" finished-at="2023-04-24T18:23:49 IST" duration-ms="15986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- benchMark_functionality -->
+        <test-method signature="personalDocuments()[pri:12, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:49 IST" name="personalDocuments" finished-at="2023-04-24T18:23:54 IST" duration-ms="5753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalDocuments -->
+        <test-method signature="aboutThreeEco()[pri:13, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:54 IST" name="aboutThreeEco" finished-at="2023-04-24T18:23:57 IST" duration-ms="2535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutThreeEco -->
+        <test-method signature="tandC_functionality()[pri:14, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:23:57 IST" name="tandC_functionality" finished-at="2023-04-24T18:24:10 IST" duration-ms="13315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tandC_functionality -->
+        <test-method signature="support_Functionality()[pri:15, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:24:10 IST" name="support_Functionality" finished-at="2023-04-24T18:24:14 IST" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- support_Functionality -->
+        <test-method signature="historyIn_Timesheet()[pri:16, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:24:14 IST" name="historyIn_Timesheet" finished-at="2023-04-24T18:24:18 IST" duration-ms="3931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- historyIn_Timesheet -->
+        <test-method signature="logout()[pri:17, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:24:18 IST" name="logout" finished-at="2023-04-24T18:24:20 IST" duration-ms="1975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.User_Flows@4b6e2263]" started-at="2023-04-24T18:24:21 IST" name="tearDown" finished-at="2023-04-24T18:24:21 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScripts.User_Flows -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
