@@ -6,12 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestScripts.Test_Scripts_1">
+      <class name="TestScripts.User_Flows">
         <methods>
+          <include name="filterByDate_HistoryDropdown_"/>
           <include name="loginApplication"/>
-          <include name="completeEntireDeliver"/>
+          <include name="tearDown"/>
+          <include name="support_Functionality"/>
+          <include name="benchMark_functionality"/>
+          <include name="applyForLeave_withApplyButton"/>
+          <include name="aboutThreeEco"/>
+          <include name="personalDocuments"/>
+          <include name="pageObjects"/>
+          <include name="historyIn_Timesheet"/>
+          <include name="logout"/>
+          <include name="tandC_functionality"/>
         </methods>
-      </class> <!-- TestScripts.Test_Scripts_1 -->
+      </class> <!-- TestScripts.User_Flows -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

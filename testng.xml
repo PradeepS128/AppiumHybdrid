@@ -4,9 +4,10 @@
 <listeners>
 <listener class-name="Listeners.ItestListeners_"></listener>
 </listeners>
+
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestScripts.Test_Scripts_1"/>
+      <class name="TestScripts.User_Flows"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -18,18 +18,15 @@ public class ReusuableCode {
 		this.driver = driver;
 	}
 
-	public void elementToAppear(WebElement element)
-	{
-	WebDriverWait driverWait=new WebDriverWait(driver, Duration.ofSeconds(30));
-	driverWait.until(ExpectedConditions.visibilityOf(element));
+	public void elementToAppear(WebElement element) {
+		WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		driverWait.until(ExpectedConditions.visibilityOf(element));
 	}
-
 
 	public Properties name() throws Exception {
-		properties=new Properties();
-		FileInputStream fileInputStream=new FileInputStream("D:\\New folder\\Java Automation\\AppiumHybdrid\\src\\main\\java\\property_files\\global.properties");
+		properties = new Properties();
+		FileInputStream fileInputStream = new FileInputStream(
+				"D:\\New folder\\Java Automation\\AppiumHybdrid\\src\\main\\java\\property_files\\global.properties");
 		properties.load(fileInputStream);
 		return properties;
-
-	}
-}
+	}}

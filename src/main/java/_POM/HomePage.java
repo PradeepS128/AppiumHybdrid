@@ -5,35 +5,33 @@ import org.openqa.selenium.By;
 import Utils_.ReusuableCode;
 import io.appium.java_client.AppiumDriver;
 
-public class HomePage extends ReusuableCode 
-{
+public class HomePage extends ReusuableCode {
 	public String successfulMsg;
-	
+
 	public HomePage(AppiumDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
 
-	By ScanVehicle=By.xpath("//android.widget.Button[@content-desc='Scan Vehicle']");
-	By close = By.xpath("//android.view.View[@content-desc='Close']");
-	By plusButton = By.xpath("//android.widget.Button[@index=3]");
-	By enterpriseDelivery = By.xpath("//android.widget.ImageView[@content-desc=\"Enterprise Delivery\"]");
-	By Ekart = By.xpath("//android.view.View[@content-desc=\"Ekart 1\"]");
-	By SelectCustomer=By.xpath("//android.view.View[@content-desc=\"Select Customer\"]");
-	By StartDelivery=By.xpath("//android.view.View[@content-desc=\"Start Delivery\"]");
-	By EndDelivery=By.xpath("//android.view.View[@content-desc=\"End Delivery\"]");
-	By Yes=By.xpath("//android.view.View[@content-desc=\"Yes\"]");
-	By CustomerDetails=By.xpath("//android.widget.EditText[@text='0, Number of Services']");
-	By EkartName=By.xpath("//android.view.View[@content-desc=\"Ekart 1\"]");
-	By Submit=By.xpath("//android.widget.Button[@content-desc=\"Submit\"]");
-	By successMsg=By.xpath("//android.view.View[@content-desc=\"Great job, your ride is finished.\r\n"
-			+ "Ok\"]");
-	
-	
+	private By ScanVehicle = By.xpath("//android.widget.Button[@content-desc='Scan Vehicle']");
+	private By close = By.xpath("//android.view.View[@content-desc='Close']");
+	private By plusButton = By.xpath("//android.widget.Button[@index=3]");
+	private By enterpriseDelivery = By.xpath("//android.widget.ImageView[@content-desc=\"Enterprise Delivery\"]");
+	private By Ekart = By.xpath("//android.view.View[@content-desc=\"Ekart 1\"]");
+	private By SelectCustomer = By.xpath("//android.view.View[@content-desc=\"Select Customer\"]");
+	private By StartDelivery = By.xpath("//android.view.View[@content-desc=\"Start Delivery\"]");
+	private By EndDelivery = By.xpath("//android.view.View[@content-desc=\"End Delivery\"]");
+	private By Yes = By.xpath("//android.view.View[@content-desc=\"Yes\"]");
+	private By CustomerDetails = By.xpath("//android.widget.EditText[@text='0, Number of Services']");
+	private By EkartName = By.xpath("//android.view.View[@content-desc=\"Ekart 1\"]");
+	private By Submit = By.xpath("//android.widget.Button[@content-desc=\"Submit\"]");
+	private By successMsg = By
+			.xpath("//android.view.View[@content-desc=\"Great job, your ride is finished.\r\n" + "Ok\"]");
+
 	public void scanVechile() {
 		elementToAppear(driver.findElement(ScanVehicle));
 		driver.findElement(ScanVehicle).click();
-		
+
 		// close button
 		closeButton();
 	}
@@ -56,63 +54,37 @@ public class HomePage extends ReusuableCode
 		driver.findElement(Ekart).click();
 	}
 
-	public void selectCustomer()
-	{
+	public void selectCustomer() {
 		eKart();
 		elementToAppear(driver.findElement(SelectCustomer));
 		driver.findElement(SelectCustomer).click();
 	}
-	
-	public void startDelivery() throws InterruptedException
-	{
-	selectCustomer();
-	elementToAppear(driver.findElement(StartDelivery));
-	driver.findElement(StartDelivery).click();
-	Thread.sleep(10000);
-	driver.findElement(EndDelivery).click();
-	elementToAppear(driver.findElement(Yes));
-	driver.findElement(Yes).click();
-	elementToAppear(driver.findElement(CustomerDetails));
-	driver.findElement(CustomerDetails).click();
-	driver.findElement(CustomerDetails).sendKeys("3");
-	elementToAppear(driver.findElement(EkartName));
-	driver.findElement(EkartName).click();
+
+	public void startDelivery() throws InterruptedException {
+		selectCustomer();
+		elementToAppear(driver.findElement(StartDelivery));
+		driver.findElement(StartDelivery).click();
+		Thread.sleep(10000);
+		driver.findElement(EndDelivery).click();
+		elementToAppear(driver.findElement(Yes));
+		driver.findElement(Yes).click();
+		elementToAppear(driver.findElement(CustomerDetails));
+		driver.findElement(CustomerDetails).click();
+		driver.findElement(CustomerDetails).sendKeys("3");
+		elementToAppear(driver.findElement(EkartName));
+		driver.findElement(EkartName).click();
 	}
-	
-	public void completeDelivery() throws InterruptedException 
-	{
+
+	public void completeDelivery() throws InterruptedException {
 		elementToAppear(driver.findElement(Submit));
 		driver.findElement(Submit).click();
-		Thread.sleep(3000);	
+		Thread.sleep(3000);
 	}
-	
-	//Billing Details	
-	public String billingDetails_NOS() 
+
+	public void startServicePlus_Button()
 	{
-	String Number_of_services = driver.findElement(By.xpath("//android.view.View[@content-desc=\"Number of Services\"]")).getText();
-	String money1 = driver.findElement(By.xpath("//android.view.View[@index=16]")).getText();
-	return Number_of_services.concat(money1);
+	elementToAppear(driver.findElement(plusButton));
+	driver.findElement(plusButton).click();
 	}
-	
-	public String billingDetails_MG() 
-	{	
-	String min_Guarantee = driver.findElement(By.xpath("//android.view.View[@content-desc=\"Minimum Guarantee\"]")).getText();
-	String money2 = driver.findElement(By.xpath("//android.view.View[@index=18]")).getText();
-	return min_Guarantee.concat(money2);
-	}
-	
-	public String billingDetails_CPT() 
-	{
-	String Charge_to_Trip=driver.findElement(By.xpath("//android.view.View[@content-desc=\"Charge per Trip\"]")).getText();
-	String money3 = driver.findElement(By.xpath("//android.view.View[@index=20]")).getText();
-	return Charge_to_Trip.concat(money3);
-	}
-	
-	public String billingDetails_Total() 
-	{
-	String Total=driver.findElement(By.xpath("//android.view.View[@content-desc=\"Total\"]")).getText();
-	String money4 = driver.findElement(By.xpath("//android.view.View[@index=22]")).getText();
-	return Total.concat(money4);
-	}
-	
+
 }
